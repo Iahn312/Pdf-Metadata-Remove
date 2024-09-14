@@ -211,7 +211,7 @@
           // Create a download link for the new PDF
           const link = document.createElement('a');
           link.href = url;
-          link.download = `${file.name.replace('.pdf', '')}_without_metadata.pdf`;
+          link.download = `${file.name.replace('.pdf', '')}.pdf`;
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
